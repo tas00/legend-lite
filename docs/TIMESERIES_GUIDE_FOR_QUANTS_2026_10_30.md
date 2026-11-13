@@ -449,3 +449,16 @@ Next:
 1. Your review, folded into version 4.
 2. A third test run on version 4.
 3. Then the build: the formula box and Python move onto the new language, and every chart in today's timeseries gallery must give the same numbers both ways before the old code is removed.
+
+## Feedback
+Add your comments below
+
+### tas00 - 20261112
+These comments relate to modes in the UI for different styles of viewing.  These would be used by different users, or by the same user at different stages of the plot development.
+* Add three view modes.  These modes would apply to individual plots but could also be set globally.
+** Edit - Compose plots from expressions, select range etc.  The current app is always in edit mode.
+** View - Remove visual clutter by hiding screen plot elements not required for the current plot view.  Perhaps condense the selected values into a terse format.  Allow changes to key items like the range selection
+** Present - Lock elements except as specified by the author to allow them to float.  This would require some consideration on the UX to allow the author to define which elements can be edited.
+* Consider changing some or all of the selectors at the top of the plot to dropdown rather than buttons.  This would make it easier to offer an appropriate set of options based on the data, as well as potentially introducing user preferences later.  It makes the plot pane size more predictable across different window sizes.
+* Add Data/Expression mode to toggle the plot to have visibility on the underlying definitions.  Link this in with the previously proposed URN format to link to another page with full debugging information.  Do not rely on the user to configure a data pane to view the data - give an option to see the data exactly as defined in the current plot pane, including any dynamic expressions (Alt-U in PlotTool)
+
